@@ -1,3 +1,6 @@
+// src/HomeShortcut.tsx
+import { useState as useState2 } from "react";
+
 // src/constants/shortcuts.ts
 var SHORTCUTS = [
   // General System & File Shortcuts (Windows)
@@ -134,7 +137,25 @@ function Shortcut({ setShortcutEnabled }) {
     ] }) }) })
   ] });
 }
+
+// src/HomeShortcut.tsx
+import { jsx as jsx2, jsxs as jsxs2 } from "react/jsx-runtime";
+function HomeShortcut() {
+  const [shortcutEnabled, setShortcutEnabled] = useState2(false);
+  return /* @__PURE__ */ jsx2("main", { children: /* @__PURE__ */ jsxs2("div", { className: "home-handle-shortcut", children: [
+    !shortcutEnabled && /* @__PURE__ */ jsx2(
+      "button",
+      {
+        className: "home-handle-shortcut-btn",
+        onClick: () => setShortcutEnabled((prev) => !prev),
+        children: "This button has keyboard shortcuts enabled!"
+      }
+    ),
+    shortcutEnabled && /* @__PURE__ */ jsx2(Shortcut, { setShortcutEnabled })
+  ] }) });
+}
 export {
+  HomeShortcut,
   Shortcut,
   useShortcut
 };
