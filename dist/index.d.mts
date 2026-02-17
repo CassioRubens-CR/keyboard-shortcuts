@@ -1,6 +1,8 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
 import React from 'react';
 
+declare function HomeShortcut(): react_jsx_runtime.JSX.Element;
+
 type ShortcutProps = {
     setShortcutEnabled: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -17,4 +19,4 @@ type ShortcutInfo = {
 };
 declare function useShortcut(): ShortcutInfo;
 
-export { Shortcut, useShortcut };
+export { HomeShortcut, Shortcut, useShortcut };

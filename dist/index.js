@@ -20,10 +20,14 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
+  HomeShortcut: () => HomeShortcut,
   Shortcut: () => Shortcut,
   useShortcut: () => useShortcut
 });
 module.exports = __toCommonJS(index_exports);
+
+// src/HomeShortcut.tsx
+var import_react2 = require("react");
 
 // src/constants/shortcuts.ts
 var SHORTCUTS = [
@@ -161,8 +165,26 @@ function Shortcut({ setShortcutEnabled }) {
     ] }) }) })
   ] });
 }
+
+// src/HomeShortcut.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
+function HomeShortcut() {
+  const [shortcutEnabled, setShortcutEnabled] = (0, import_react2.useState)(false);
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("main", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "home-handle-shortcut", children: [
+    !shortcutEnabled && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+      "button",
+      {
+        className: "home-handle-shortcut-btn",
+        onClick: () => setShortcutEnabled((prev) => !prev),
+        children: "This button has keyboard shortcuts enabled!"
+      }
+    ),
+    shortcutEnabled && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Shortcut, { setShortcutEnabled })
+  ] }) });
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  HomeShortcut,
   Shortcut,
   useShortcut
 });
