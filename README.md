@@ -30,6 +30,7 @@ Import the main component and CSS in your project:
 ```tsx
 import { HomeShortcut } from 'keyboard-shortcuts-cr';
 import "keyboard-shortcuts-cr/dist/index.css";
+// Ex Path: node_modules\keyboard-shortcuts-cr\dist\index.css
 
 export default function Home() {
 	return <HomeShortcut />;
@@ -41,17 +42,32 @@ export default function Home() {
 - `Shortcut`: Standalone shortcut visualization component
 - `useShortcut`: Hook to access shortcut info programmatically
 
-![alt text](/public/image-1.png)
-![alt text](/public/image.png)
-![alt text](/public/image-2.png)
-![alt text](/public/image-3.png)
-![alt text](/public/image-4.png)
+```tsx
+<div align="center">
+  <picture>
+    <img src="/public/image-1.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Main Interface">
+  </picture>
+  <picture>
+    <img src="/public/image.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Detection Demo">
+  </picture>
+  <picture>
+    <img src="/public/image-2.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Shortcut Display">
+  </picture>
+  <picture>
+    <img src="/public/image-3.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Multiple Keys">
+  </picture>
+  <picture>
+    <img src="/public/image-4.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Advanced Usage">
+  </picture>
+</div>
+```
 
 ### Example
 
 ```tsx
 import { HomeShortcut, useShortcut } from 'keyboard-shortcuts-cr';
 import "keyboard-shortcuts-cr/dist/index.css";
+// Ex Path: node_modules\keyboard-shortcuts-cr\dist\index.css
 
 export default function Home() {
 	const shortcut = useShortcut();
@@ -59,6 +75,8 @@ export default function Home() {
 		<>
 			<HomeShortcut />
 			<pre>{JSON.stringify(shortcut, null, 2)}</pre>
+      // "pre" For verification and debugging purposes only.
+      // "pre" Do not leave in the code.
 		</>
 	);
 }
