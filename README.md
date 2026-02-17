@@ -42,7 +42,6 @@ export default function Home() {
 - `Shortcut`: Standalone shortcut visualization component
 - `useShortcut`: Hook to access shortcut info programmatically
 
-```tsx
 <div align="center">
   <picture>
     <img src="/public/image-1.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Main Interface">
@@ -60,7 +59,6 @@ export default function Home() {
     <img src="/public/image-4.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Advanced Usage">
   </picture>
 </div>
-```
 
 ### Example
 
