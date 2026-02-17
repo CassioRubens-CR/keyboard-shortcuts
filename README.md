@@ -65,27 +65,6 @@ export default function Home() {
 ### Example screen
 
 <div align="center">
-  <picture>
-    <img src="/public/image-1.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Main Interface">
-  </picture>
-  <picture>
-    <img src="/public/image.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Detection Demo">
-  </picture>
-  <picture>
-    <img src="/public/image-2.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Shortcut Display">
-  </picture>
-  <picture>
-    <img src="/public/image-3.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Multiple Keys">
-  </picture>
-  <picture>
-    <img src="/public/image-4.png" width="500" style="max-width: 100%; height: auto; display: block; margin: 20px auto;" alt="Keyboard Shortcuts - Advanced Usage">
-  </picture>
-</div>
-
-
-### Example screen assets
-
-<div align="center">
   <img src="https://raw.githubusercontent.com/CassioRubens-CR/keyboard-shortcuts/main/public/image-1.png" width="500" style="max-width: 100%; height: auto;" alt="Keyboard Shortcuts - Main Interface">
   <br><br>
   <img src="https://raw.githubusercontent.com/CassioRubens-CR/keyboard-shortcuts/main/public/image.png" width="500" style="max-width: 100%; height: auto;" alt="Keyboard Shortcuts - Detection Demo">
