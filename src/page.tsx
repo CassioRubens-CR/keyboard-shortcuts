@@ -4,7 +4,7 @@ import { useState } from "react";
 import Shortcut from "./Shortcut";
 import "./styles/page.css";
 
-export default function Home() {
+export default function HomeShortcut() {
   const [shortcutEnabled, setShortcutEnabled] = useState(false);
 
   return (
